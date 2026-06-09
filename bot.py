@@ -52,24 +52,21 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-BOT_TOKEN = "8943121850:AAEijf6eIpsUDlltVV3SIwSinq1nFRIHxw4"
-ADMIN_IDS = [7500869913, 6458297811]
+BOT_TOKEN = "8546146652:AAFd7AweoTzExT03_RCDeEwDFD_Z__z4x2E"
+ADMIN_IDS = [5090817443, 6109365101]
 ADMIN_CHAT_ID = str(ADMIN_IDS[0])
-OTP_GROUP_ID = -1003053441379
-OTP_GROUP_USERNAME = "afrixotpgc"
+OTP_GROUP_ID = -1002630763942
+OTP_GROUP_USERNAME = "hotslay"
 
-ORANGE_EMAIL = "jadenafrix10@gmail.com"
-ORANGE_PASSWORD = "mahachi2007"
+ORANGE_EMAIL = "saeedgoraya982@gmail.com"
+ORANGE_PASSWORD = "77913011"
 
 LOGIN_URL = "https://www.orangecarrier.com/login"
 CALL_URL = "https://www.orangecarrier.com/live/calls"
 BASE_URL = "https://www.orangecarrier.com"
 
 FORCE_JOIN_CHANNELS = [
-    {"name": "ᴀɴᴛʜʀɪs", "username": "anthris", "url": "https://t.me/anthris"},
-    {"name": "ᴍʀ.ᴀғʀɪx", "username": "mr_afrix", "url": "https://t.me/mr_afrix"},
-    {"name": "ᴛʜᴇ sᴀɢᴇ", "username": "sage_xd", "url": "https://t.me/sage_xd"},
-    {"name": "ᴊᴅɴ404", "username": "jdn404", "url": "https://t.me/jdn404"},
+    {"name": "Redirect", "username": "hotslay", "url": "https://t.me/hotslay"},
 ]
 
 DOWNLOAD_FOLDER = "/tmp/calls"
