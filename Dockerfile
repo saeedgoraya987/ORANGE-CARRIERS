@@ -1,21 +1,17 @@
 FROM python:3.11-slim
 
-# Install system dependencies
 RUN apt-get update && apt-get install -y \
     chromium \
     chromium-driver \
-    ffmpeg \
+    unzip \
     && rm -rf /var/lib/apt/lists/*
 
-# Set working directory
 WORKDIR /app
-
-# Copy requirements and install Python packages
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy application code
 COPY . .
 
-# Run the bot
-CMD ["python", "bot.py"]
+# Extract if needed
+RUN if [ -f "ivasms_auto_Script.zip" ]; then unzip -o ivasms_auto_Script.zip; fi
+
+RUN pip install -r requirements.txt
+
+CMD ["python", "ivasms_auto.py"]
