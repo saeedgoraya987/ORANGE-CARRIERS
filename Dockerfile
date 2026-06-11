@@ -1,16 +1,6 @@
 FROM python:3.11-slim
-
-RUN apt-get update && apt-get install -y \
-    chromium \
-    chromium-driver \
-    unzip \
-    wget \
-    && rm -rf /var/lib/apt/lists/*
-
+RUN apt-get update && apt-get install -y chromium chromium-driver unzip
 WORKDIR /app
-
 COPY . .
-
-RUN pip install --no-cache-dir -r requirements.txt
-
+RUN pip install -r requirements.txt
 CMD ["python", "ivasms_auto.py"]
